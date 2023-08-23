@@ -46,6 +46,7 @@ for($i = 0; $i < count($arrayNumeros); $i++){
 print_r ($arrayNumeros);
 */
 
+/*
 $arr = [0,1,2,3,4,5,6,7,8,9];
 
 foreach($arr as $indice => $value){
@@ -56,4 +57,27 @@ foreach($arr as $indice => $value){
     }
     echo "valor do índice : " . $indice . " valor : " . $value . "\n";
 }
+*/
+
+$frutas = ["banana", 'kiwi', 'pêra', 'mamão'];
+$contador = count($frutas);
+
+$i = 0;
+while ($i < $contador){
+
+    if ($frutas[$i] == "pêra"){
+        break;
+    }
+    echo $frutas[$i] . "\n";
+
+    $i++;
+}
+
+do {
+    echo $frutas[$i] . "\n";
+
+    $i++;
+
+
+} while ($i < $contador);
 ?>
