@@ -25,6 +25,7 @@ else{
 }
 */
 
+/*
 $arrayNumeros = [54, 26, 93, 17, 77, 31, 44, 55, 20];
 print_r($arrayNumeros);
 
@@ -43,4 +44,16 @@ for($i = 0; $i < count($arrayNumeros); $i++){
 }
 
 print_r ($arrayNumeros);
+*/
+
+$arr = [0,1,2,3,4,5,6,7,8,9];
+
+foreach($arr as $indice => $value){
+
+    if ($value % 2 == 1){
+        break; // interrompe-se o loop;
+        //continue; // passa para a próxima iteração.
+    }
+    echo "valor do índice : " . $indice . " valor : " . $value . "\n";
+}
 ?>
