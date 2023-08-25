@@ -1,0 +1,15 @@
+{
+    "name": "marco/estudar-php",
+    "description": "Estudando Composer",
+    "type": "project",
+    "authors": [
+        {
+            "name": "00Theory",
+            "email": "marco200002010@outlook.com"
+        }
+    ],
+    "require": {
+        "mpdf/mpdf": "^7.1",
+        "ext-gd": "*"
+    }
+}
