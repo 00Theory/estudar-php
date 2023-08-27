@@ -1,6 +1,11 @@
 {
     "name": "marco/estudar-php",
     "description": "Estudando Composer",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
     "type": "project",
     "authors": [
         {
