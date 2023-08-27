@@ -12,11 +12,17 @@ $contaBancaria = new ContaBancaria(
     '1000000'
 );
 
+echo $contaBancaria -> obterSaldo();
+echo PHP_EOL;
 
-$contaBancaria -> setBanco("Banco do Brasil");
-$contaBancaria -> setNomeTitular("Marco Lima");
-$contaBancaria -> setNumeroAgencia("9132");
-$contaBancaria -> setNumeroConta("1321-01");
-$contaBancaria -> setSaldo("1000000");
+echo $contaBancaria -> depositar(500000);
+echo PHP_EOL;
 
-var_dump($contaBancaria -> getBanco());
+echo $contaBancaria -> obterSaldo();
+echo PHP_EOL;
+
+echo $contaBancaria -> sacar(950000);
+echo PHP_EOL;
+
+echo $contaBancaria -> obterSaldo();
+echo PHP_EOL;
